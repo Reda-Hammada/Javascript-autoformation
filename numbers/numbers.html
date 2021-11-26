@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <script>
+        var x = 2;  // integer number
+        var y = 3.14;  // floating-point number
+        var x = 0xff;  // same as 255
+        var y = 0xb4;  // same as 180
+        var z = 0x00;  // same as 0
+        var x = 10;
+        var y = 20;
+        var z = "30";
+
+        // Adding a number with a number, the result will be sum of numbers
+        console.log(x + y); // 30
+
+        // Adding a string with a string, the result will be string concatenation
+        console.log(z + z); // '3030'
+
+        // Adding a number with a string, the result will be string concatenation
+        console.log(x + z); // '1030'
+
+        // Adding a string with a number, the result will be string concatenation
+        console.log(z + x); // '3010'
+
+        // Adding strings and numbers, the result will be string concatenation
+        console.log("The result is: " + x + y); // 'The result is: 1020'
+
+        // Adding numbers and strings, calculation performed from left to right
+        console.log(x + y + z); // 'The result is: 3030'
+        var x = 10;
+        var y = 20;
+        var z = "30";
+
+        // Subtracting a number from a number
+        console.log(y - x); // 10
+
+        // Subtracting a number from a numeric string
+        console.log(z - x); // 20
+
+        // Multiplying a number with a numeric string
+        console.log(x * z); // 300
+
+        // Dividing a number with a numeric string
+        console.log(z / x); // 3
+        var x = 10;
+        var y = "foo";
+        var z = NaN;
+
+        // Subtracting a number from a non-numeric string
+        console.log(y - x); // NaN
+
+        // Multiplying a number with a non-numeric string
+        console.log(x * y); // NaN
+
+        // Dividing a number with a non-numeric string
+        console.log(x / y); // NaN
+
+        // Adding NaN to a number 
+        console.log(x + z); // NaN
+                                
+        // Adding NaN to a string 
+        console.log(y + z); // fooNaN
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
