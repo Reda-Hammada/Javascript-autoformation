@@ -16,5 +16,6 @@ b = c;
 document.getElementById('ap');
 document.getElementById('bp');
 
+// output
 ap.innerHTML = a;
 bp.innerHTML = b;
