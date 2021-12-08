@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example 8 - DOM</title>
+</head>
+<body>
+    <div id="paraElem">
+        <p id="childElem">this is a test</p>
+        <button onclick="clickMe()">click me</button>
+
+    </div>
+    <script>
+       function clickMe(){
+
+        var parent = document.getElementById('paraElem');
+        var child = document.getElementById('childElem');
+        var newPara = document.createElement('p');
+        var newContent = document.createTextNode("this is a replaced test")
+        newPara.appendChild(newContent);
+
+        parent.replaceChild(newPara, child);
+       }
+    </script>
+</body>
+</html>
