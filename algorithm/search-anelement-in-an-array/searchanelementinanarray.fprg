@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-13 01:45:56 PM"/>
+        <attribute name="created" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTM7MTE6NDc6NTAgQU07MzEyMA=="/>
+        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTM7MDE6NDU6NTYgUE07MTszMjQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numbers" type="Integer" array="True" size="4"/>
+            <assign variable="numbers[0]" expression="4"/>
+            <assign variable="numbers[1]" expression="10"/>
+            <assign variable="numbers[2]" expression="5"/>
+            <assign variable="numbers[3]" expression="40"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="userInput" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="10" direction="inc" step="1">
+                <input variable="userInput"/>
+                <if expression="userInput = numbers[i]">
+                    <then>
+                        <output expression="&quot;the number exists&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;the number does not exist&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
