@@ -4,13 +4,15 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Solicode"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-12-13 01:45:56 PM"/>
+        <attribute name="saved" value="2021-12-14 09:31:14 AM"/>
         <attribute name="created" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTM7MTE6NDc6NTAgQU07MzEyMA=="/>
-        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTM7MDE6NDU6NTYgUE07MTszMjQ2"/>
+        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTQ7MDk6MzE6MTQgQU07MjszMjMw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
+            <declare name="isFound" type="Boolean" array="False" size=""/>
+            <assign variable="isFound" expression="false"/>
             <declare name="numbers" type="Integer" array="True" size="4"/>
             <assign variable="numbers[0]" expression="4"/>
             <assign variable="numbers[1]" expression="10"/>
@@ -18,17 +20,23 @@
             <assign variable="numbers[3]" expression="40"/>
             <declare name="i" type="Integer" array="False" size=""/>
             <declare name="userInput" type="Integer" array="False" size=""/>
-            <for variable="i" start="0" end="10" direction="inc" step="1">
-                <input variable="userInput"/>
-                <if expression="userInput = numbers[i]">
+            <input variable="userInput"/>
+            <for variable="i" start="0" end="3&#13;&#10;" direction="inc" step="1">
+                <if expression="userInput == numbers[i]">
                     <then>
-                        <output expression="&quot;the number exists&quot;" newline="True"/>
+                        <assign variable="isFound" expression="true"/>
                     </then>
-                    <else>
-                        <output expression="&quot;the number does not exist&quot;" newline="True"/>
-                    </else>
+                    <else/>
                 </if>
             </for>
+            <if expression="isFound">
+                <then>
+                    <output expression="&quot;the number exists&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;the number does not exist&quot;" newline="True"/>
+                </else>
+            </if>
         </body>
     </function>
 </flowgorithm>

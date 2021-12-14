@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var isFound;
+        
+        isFound = false;
+
+        var listNumbers = ['4', '10', '5', '40'];
+
+        var userInput;
+
+        userInput = window.prompt();
+        for(var i= 0; i <=3; i++){
+
+            if(userInput == listNumbers[i]){
+
+                isFound = true;
+            }
+        }
+
+        if(isFound){
+
+            window.alert("the number exists");
+            
+        }
+        else{
+
+            window.alert("it does not exist")
+        }
+
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
