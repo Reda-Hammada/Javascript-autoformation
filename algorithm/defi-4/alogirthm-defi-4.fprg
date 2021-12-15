@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-15 10:59:15 AM"/>
+        <attribute name="created" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTU7MTA6NDU6MDIgQU07MzExNg=="/>
+        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTU7MTA6NTk6MTUgQU07MTszMjMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="myArray" type="Integer" array="True" size="5"/>
+            <assign variable="myArray[0]" expression="40"/>
+            <assign variable="myArray[1]" expression="3"/>
+            <assign variable="myArray[2]" expression="10"/>
+            <assign variable="myArray[3]" expression="5"/>
+            <assign variable="myArray[4]" expression="50"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <declare name="temp" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <for variable="j" start="0" end="3" direction="inc" step="1">
+                    <if expression="myArray[j] &gt; myArray[j + 1]">
+                        <then>
+                            <assign variable="temp" expression="myArray[j]"/>
+                            <assign variable="myArray[j]" expression="myArray[j+1]"/>
+                            <assign variable="myArray[j+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
