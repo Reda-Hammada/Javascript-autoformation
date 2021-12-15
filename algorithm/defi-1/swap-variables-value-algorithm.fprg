@@ -4,23 +4,23 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Solicode"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-12-13 11:44:12 AM"/>
+        <attribute name="saved" value="2021-12-14 03:16:49 PM"/>
         <attribute name="created" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTM7MTE6MDU6MTEgQU07MzExMQ=="/>
-        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTM7MTE6NDQ6MTIgQU07MTszMjIz"/>
+        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC0xUUNGUDg5OzIwMjEtMTItMTQ7MDM6MTY6NDkgUE07MjszMjUw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="A" type="Integer" array="False" size=""/>
-            <assign variable="A" expression="1"/>
             <declare name="B" type="Integer" array="False" size=""/>
-            <assign variable="B" expression="6"/>
             <declare name="C" type="Integer" array="False" size=""/>
-            <assign variable="C" expression="B"/>
-            <assign variable="B" expression="A"/>
-            <assign variable="A" expression="C"/>
+            <input variable="A"/>
+            <input variable="B"/>
             <output expression="A" newline="True"/>
             <output expression="B" newline="True"/>
+            <assign variable="C" expression="A"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="C"/>
         </body>
     </function>
 </flowgorithm>
