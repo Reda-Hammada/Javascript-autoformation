@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide & show paragraph</title>
+    <script>
+       
+    </script>
+
+</head>
+<body>
+    <div>
+        <p id="paragraph">Hello World !</p>
+    </div>
+    <div>
+        <button onclick=hide()>Hide</button>
+        <button onclick=show()>Show</button>
+    </div>
+   
+   
+
+<script>
+
+
+function hide(){
+
+    document.getElementById('paragraph').style.display= 'none';
+}
+
+function show(){
+
+    document.getElementById('paragraph').style.display = 'flex';
+}
+
+</script>
+</body>
+</html>
