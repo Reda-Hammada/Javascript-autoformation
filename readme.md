@@ -16,5 +16,5 @@ in this repository i will be sharing what i have learnt in Javascript
 - Numbers  
 - Conditions  
 - variables  
-- Ecmascript(for&let,bloc scope and function scope,
+- Ecmascript(var&let,bloc scope and function scope,
 arrow function with parameters,for )  
