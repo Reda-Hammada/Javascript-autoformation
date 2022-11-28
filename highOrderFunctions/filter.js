@@ -16,7 +16,7 @@ let people = [
 ]
 
 
-const peopleAbove18 =  people.filter((person )=> person.age >=18); 
+const peopleAbove18 =  people.filter((person )=> person.age >=18 ); 
 
 
 console.log(peopleAbove18);
