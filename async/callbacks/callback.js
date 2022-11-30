@@ -15,7 +15,7 @@ greetReda(greet);
 
 //example 2
 const posts = [
-    
+
     {title:'Post one',body:'this is post one'},
     {title:'Post two',body:"this is post two"}
 ]
@@ -43,4 +43,4 @@ const createPost = (post, callBack) =>
 
 getPosts();
 
-createPost({title:'Post three', body:'This is post three'},getPosts);
+createPost({title:'Post three', body:'This is post three'},getPosts); 
