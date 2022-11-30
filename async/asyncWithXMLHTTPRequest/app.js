@@ -10,9 +10,7 @@ request.open('GET',
  request.addEventListener('load', function(){
   data = this.responseText;
   JSON.parse(data);
-
-  
-   alert(data);
+   console.log(data);
     
   
   });

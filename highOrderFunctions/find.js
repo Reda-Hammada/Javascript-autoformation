@@ -3,3 +3,4 @@
   const result = people.find(({name})=>name =='reda');
 
   console.log(result);
+
