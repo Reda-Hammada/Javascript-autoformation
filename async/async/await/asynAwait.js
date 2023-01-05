@@ -16,7 +16,6 @@ console.log(greet());
     })
 
     let result = await promise;
-
     console.log(result);
 
 

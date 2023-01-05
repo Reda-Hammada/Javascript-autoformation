@@ -33,7 +33,6 @@ const posts = [
       })
    }
    
-   getPosts();
    
    createPost({title:'Post three', body:'This is post three'})
    .then(getPosts)
