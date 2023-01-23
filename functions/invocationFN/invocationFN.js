@@ -14,9 +14,10 @@ function Morocco(){
 }
 
 // arguments
-function marry(person1,person2){
+function marry(...args){
     console.log(arguments);
-    return `${person1} is now married to pareson ${person2}`
+    console.log(Array.from(arguments));
+    return `${args[0]} is now married to person ${args[1]}`
 }
 
 // function Invocation/Call/Execution 
