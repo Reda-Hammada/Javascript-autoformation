@@ -7,7 +7,7 @@
 
 console.log(sing());
 
-console.log(teddy)
+console.log(teddy);
 
 const teddy = 'bear'
 
