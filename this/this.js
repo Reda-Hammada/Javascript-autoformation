@@ -26,12 +26,6 @@ const obj = {
       console.log("b", this);
     };
     anotherFunc1();
-    // another alternative is to bind the function to the object
-     function anotherFunc2() {
-      console.log("c", this);
-    }
-     anotherFunc2.bind(this)
-     anotherFunc2()
-  },
+ }
 };
 obj.sing();
