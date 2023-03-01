@@ -19,11 +19,22 @@ const archer = {
 
 }
 
-console.log('1',archer);
+console.log('1',archer.health);
 wizard.heal.call(archer);
-console.log('2',archer)
+console.log('2',archer.health)
 
 /**
  * for apply it is the same thing the only difference between 
    it and call is apply take an array when it comes to multiple parameters
  */
+
+// function currying 
+
+function multiply(a,b){
+    return a * b;
+}
+
+let multiplyByTwo =  multiply.bind(this,2);
+
+console.log(multiplyByTwo(4));
+    
