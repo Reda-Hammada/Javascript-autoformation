@@ -30,3 +30,7 @@ var array2 = {
 
 console.log(Array.isArray(array1))
 console.log(Array.isArray(array2))
+
+// type Coercion 
+1 == '1';
+console.log(1=='1');
