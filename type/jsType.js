@@ -34,3 +34,7 @@ console.log(Array.isArray(array2))
 // type Coercion 
 1 == '1';
 console.log(1=='1');
+// true
+// avoid this using three equals 
+console.log(1 === '1');
+// false  
