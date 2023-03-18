@@ -1,3 +1,6 @@
+//  scope is function based
+// context is object based 
+
 function a(){
     console.log('hi')
 }
