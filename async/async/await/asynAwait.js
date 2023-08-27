@@ -5,15 +5,14 @@ async function greet (){
 }
 console.log(greet());
 
-// await with async function 
-
+ 
   async function greetInGerman(){
      
     let promise  = new Promise((resolve, reject)=>{
         
             setTimeout(()=> resolve('Hallo, wie geht es dir'),2000);
 
-    })
+    }) 
 
     let result = await promise;
     console.log(result);
